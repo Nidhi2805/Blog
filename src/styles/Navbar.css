@@ -1,0 +1,164 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #121619;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+  }
+  
+  .navbar .leftSide img {
+    width: 70px;
+  }
+  
+  .navbar .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .navbar .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar .rightSide svg {
+    font-size: 40px;
+  }
+  
+  .navbar #open {
+    padding-left: 0px;
+  }
+  .navbar #open img {
+    display: none;
+  }
+  
+  .navbar #close img {
+    display: inherit;
+  }
+  
+  .navbar #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+  }
+  
+  .navbar #close .hiddenLinks {
+    display: none;
+  }
+  
+  .navbar #open a {
+    width: 70px;
+    margin: 5px;
+  }
+  @media only screen and (max-width: 900px) {
+    .navbar .rightSide a {
+      width: 70px;
+    }
+    .navbar .leftSide {
+      padding-left: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navbar .rightSide a {
+      display: none;
+    }
+  
+    .navbar .rightSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .navbar .rightSide button {
+      display: inherit;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .navbar .rightSide button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  }
+
+  button {
+    background-color: #121619;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Items are placed with space between them */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  
+  .leftSide {
+    display: flex; /* Use flexbox for left side items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .loginButton {
+    margin-left: auto; /* Push the button to the right */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Change to column layout for smaller screens */
+      align-items: flex-start; /* Align items to start */
+    }
+  
+    .leftSide {
+      margin-bottom: 20px;
+    }
+  
+    .rightSide {
+      display: flex; /* Show right side for smaller screens */
+      align-items: center;
+    }
+  
+    .hiddenLinks {
+      display: flex; /* Show links in smaller screens */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .loginButton {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }

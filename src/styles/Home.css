@@ -1,0 +1,103 @@
+.home {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Changed to center for vertical alignment */
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .headerContainer {
+    margin-top: 500px; /* Adjusted margin from left to top */
+    text-align: center; /* Centered text alignment */
+  }
+  
+  .headerContainer h1 {
+    font-size: 90px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .headerContainer p {
+    padding: 0;
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+  }
+  
+  .headerContainer button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    height: 50px;
+    width: 180px;
+    color: #000;
+    font-size: 20px;
+    margin-top: 20px; /* Adjusted margin for spacing */
+  }
+  
+  .headerContainer button:hover {
+    background-color: rgb(222, 215, 215);
+    transition: background-color 0.3s ease-in;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .home {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .headerContainer {
+      margin-top: 0;
+      border-radius: 10px;
+      padding: 10px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #121619;
+    }
+    .headerContainer h1 {
+      font-size: 40px;
+    }
+  
+    .headerContainer p {
+      font-size: 30px;
+    }
+  
+    .headerContainer button {
+      background-color: white;
+      color: #121619;
+      margin-bottom: 30px;
+    }
+  
+    .headerContainer button:hover {
+      background-color: rgb(225, 225, 225);
+      color: #121619;
+    }
+  }
+  
+.carousel {
+    margin-top: 50px;
+    
+}
+/* Home.css */
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: 500px;
+    width: 100%;
+  }
+  
